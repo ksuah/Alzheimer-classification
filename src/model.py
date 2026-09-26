@@ -7,7 +7,6 @@ class AlzheimerNet(nn.Module):
     def __init__(self, num_classes=4):
         super(AlzheimerNet, self).__init__()
 
-        # Берём предобученную ResNet18
         self.backbone = models.resnet18(weights=models.ResNet18_Weights.IMAGENET1K_V1)
 
         in_features = self.backbone.fc.in_features

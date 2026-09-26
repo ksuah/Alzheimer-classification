@@ -20,7 +20,6 @@ class AlzheimerDataset(Dataset):
         self.image_paths = []
         self.labels = []
 
-        # Проходим по папкам классов
         for class_name, class_idx in self.class_to_idx.items():
             class_folder = os.path.join(root_dir, class_name)
             if not os.path.isdir(class_folder):
