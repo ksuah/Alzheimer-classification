@@ -1,0 +1,9 @@
+venv/
+__pycache__/
+*.pyc
+*.pth
+Data/
+test_images/
+.idea/
+.vscode/
+.DS_Store
